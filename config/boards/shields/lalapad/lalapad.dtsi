@@ -49,7 +49,7 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
 left_config {
-            triggers-per-rotation = <12>;   // 左を高感度に（1回カリカリで反応）
+            triggers-per-rotation = <10>;   // 左を高感度に（1回カリカリで反応）
         };
         right_config {
             triggers-per-rotation = <10>;

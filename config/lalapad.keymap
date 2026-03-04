@@ -264,11 +264,11 @@
 
         windows {
             bindings = <
-&mt2 SEMI LBKT  &kp Q              &kp W      &kp E              &kp R              &kp T         &kp Y   &kp U             &kp I             &kp O            &kp P                  &kp ESCAPE
-&kp LCTRL       &mt2 LCTRL A       &kp S      &mt2 LANGUAGE_2 D  &mt2 LANGUAGE_1 F  &kp G         &kp H   &mkp_tap LCLK J   &kp K             &mkp_tap RCLK L  &mt2 LEFT_SHIFT MINUS  &kp APOS
-&kp LSHFT       &mt2 LEFT_SHIFT Z  &kp X      &kp C              &kp V              &kp B         &kp N   &kp M             &kp COMMA         &kp DOT          &mt2 UP_ARROW FSLH     &kp BSLH
-&mkp LCLK       &kp LGUI           &kp LALT   &kp SPACE          &lt2 10 TAB        &bt_mac       &mo 6   &lt2 2 BACKSPACE  &mt2 LCTRL ENTER  &kp LEFT_ARROW   &kp DOWN_ARROW         &kp RIGHT_ARROW
-                                   &kp RIGHT  &kp DOWN_ARROW     &kp LEFT_ARROW     &kp UP_ARROW  &trans  &trans            &trans            &trans
+&mt2 SEMI LBKT  &kp Q              &kp W            &kp E              &kp R              &kp T         &kp Y   &kp U              &kp I             &kp O            &kp P                  &kp ESCAPE
+&kp LCTRL       &mt2 LCTRL A       &lt2 11 S        &mt2 LANGUAGE_2 D  &mt2 LANGUAGE_1 F  &kp G         &kp H   &mkp_tap LCLK J    &kp K             &mkp_tap RCLK L  &mt2 LEFT_SHIFT MINUS  &kp APOS
+&kp LSHFT       &mt2 LEFT_SHIFT Z  &mt2 LEFT_ALT X  &kp C              &kp V              &kp B         &kp N   &kp M              &kp COMMA         &kp DOT          &mt2 UP_ARROW FSLH     &kp BSLH
+&mkp LCLK       &kp LGUI           &bootloader      &kp SPACE          &lt2 10 TAB        &bt_mac       &mo 5   &lt2 12 BACKSPACE  &mt2 LCTRL ENTER  &bootloader      &kp DOWN_ARROW         &kp RIGHT_ARROW
+                                   &kp RIGHT        &kp DOWN_ARROW     &kp LEFT_ARROW     &kp UP_ARROW  &trans  &trans             &trans            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
@@ -374,6 +374,30 @@
 &trans  &kp LS(SEMI)  &trans         &trans      &trans         &trans         &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(GRAVE)  &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(APOS)
 &trans  &trans        &trans         &trans      &trans         &trans         &trans         &trans         &trans         &trans        &trans        &trans
                       &kp LS(LG(I))  &trans      &kp LS(LG(U))  &kp LS(LG(J))  &trans         &trans         &trans         &trans
+            >;
+
+            sensor-bindings = <&volume_up_down>, <&volume_up_down>;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &kp LS(N1)    &kp LS(N2)           &kp LS(N3)          &kp LS(N4)          &kp LS(N5)        &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)    &kp LS(N0)    &trans
+&trans  &kp SEMI      &trans               &trans              &trans              &trans            &kp MINUS      &kp EQUAL      &kp GRAVE      &kp LBKT      &kp RBKT      &kp APOS
+&trans  &kp LS(SEMI)  &trans               &trans              &trans              &trans            &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(GRAVE)  &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(APOS)
+&trans  &trans        &trans               &trans              &trans              &trans            &trans         &trans         &trans         &trans        &trans        &trans
+                      &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &trans         &trans         &trans         &trans
+            >;
+
+            sensor-bindings = <&volume_up_down>, <&volume_up_down>;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &kp N1   &kp N2               &kp N3              &kp N4              &kp N5            &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &trans
+&trans  &kp F1   &kp F2               &kp F3              &kp LS(LG(S))       &kp F5            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp F6   &kp F7               &kp F8              &kp F9              &kp F10           &kp HOME        &kp PG_UP       &kp PG_DN     &kp END          &trans  &trans
+&trans  &kp F11  &kp F12              &trans              &trans              &trans            &trans          &trans          &trans        &trans           &trans  &trans
+                 &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &trans          &trans          &trans        &trans
             >;
 
             sensor-bindings = <&volume_up_down>, <&volume_up_down>;

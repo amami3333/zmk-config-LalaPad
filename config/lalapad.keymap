@@ -221,6 +221,15 @@
 
             label = "TAP_MKP";
         };
+
+        nob_page: nob_page {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
+
+            tap-ms = <20>;
+            label = "NOB_PAGE";
+        };
     };
 
     macros {
@@ -253,7 +262,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&nob_page>, <&scroll_up_down>;
 
             bindings = <
 &mt2 SEMI LBKT  &kp Q                 &kp W            &kp E              &kp R              &kp T         &kp Y   &kp U             &kp I                &kp O            &kp P                  &mt2 LS(LG(D)) LS(MINUS)
@@ -273,7 +282,7 @@
                                    &kp RIGHT        &kp DOWN_ARROW     &kp LEFT_ARROW     &kp UP_ARROW  &trans  &trans             &trans            &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&nob_page>, <&scroll_up_down>;
         };
 
         suuji {

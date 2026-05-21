@@ -282,7 +282,7 @@
                                    &kp RIGHT        &kp DOWN_ARROW     &kp LEFT_ARROW     &kp UP_ARROW  &trans  &trans             &trans            &trans
             >;
 
-            sensor-bindings = <&nob_page>, <&scroll_up_down>;
+            sensor-bindings = <&volume_up_down>, <&scroll_up_down>;
         };
 
         suuji {

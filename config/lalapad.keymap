@@ -311,11 +311,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans     &mkp MB4       &mkp MB5   &trans                    &trans
-&trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &mkp LCLK  &kp LG(SPACE)  &mkp RCLK  &tap_mkp LEFT_SHIFT RCLK  &mo 7
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &mkp MCLK  &mkp MB4       &mkp MB5   &trans                    &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans     &trans         &trans     &trans                    &trans
-                &trans  &trans  &trans     &trans  &trans  &trans     &trans         &trans
+&trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans     &mkp MB4       &mkp MB5   &trans                    &trans
+&trans  &trans  &trans  &trans    &mkp LCLK  &trans  &trans  &mkp LCLK  &kp LG(SPACE)  &mkp RCLK  &tap_mkp LEFT_SHIFT RCLK  &mo 7
+&trans  &trans  &trans  &trans    &trans     &trans  &trans  &mkp MCLK  &mkp MB4       &mkp MB5   &trans                    &trans
+&trans  &trans  &trans  &mkp MB1  &trans     &trans  &trans  &trans     &trans         &trans     &trans                    &trans
+                &trans  &trans    &trans     &trans  &trans  &trans     &trans         &trans
             >;
         };
 
